@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
+  font-size: 1.1rem;
 }
 
 /* latin */
@@ -38,7 +39,7 @@
   border-radius: 10px;
   gap: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .calc-body {
     grid-auto-flow: row;
     grid-template-columns: 1fr;
