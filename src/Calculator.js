@@ -8,13 +8,14 @@ export const Calculator = ()=>{
     let evaluateExpression = () => {
         let expression = displayValue
         // eslint-disable-next-line no-eval
-        let result = 1
-        let value = expression.split('/')
-            for (let ints in value){
-                result = result / value[ints]
-                console.log(value[ints], result)
-            }
-        console.log(result)
+        let result = eval(expression)
+        // let result = 1
+        // let value = expression.split('/')
+        //     for (let ints in value){
+        //         result = result / value[ints]
+        //         console.log(value[ints], result)
+        //     }
+        // console.log(result)
 
         setDisplayValue('' + result)
     }
